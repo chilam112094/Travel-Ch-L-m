@@ -1,0 +1,389 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{margin: 0;
+padding: 0;
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
+}
+
+.header{
+/*	height: 50px;*/
+	padding: 20px 0;
+	box-sizing: border-box;
+	width: 100%;
+/*	background-color: #4CAF50;*/
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+}
+			/*logo*/
+.logo{
+	height: 50px;
+/*	background-color: antiquewhite;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	animation: bounceInDown 2s 0s linear forwards;
+}
+.logo a{
+	text-decoration: none;
+	color: white;
+	font-size: 50px;
+}
+			/*menu*/
+.nav ul{
+	height: 50px;
+/*	border: 1px solid rgba(218,44,47,1.00);*/
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	text-transform: uppercase;
+	align-items: center;
+}.logo img{width: 38%; height: auto;}
+.nav ul li{
+	margin: 0 25px;
+	opacity: 0;
+	animation: fadeInDownBig 0.5s 0s linear forwards;
+}
+.nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+.nav ul li a:hover{
+	border-bottom: solid 5px rgba(51,233,90,1.00);
+	padding: 15px 0 ;
+}
+			/*icon*/
+.icon{
+	height: 100%;
+/*	background-color: antiquewhite;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+}
+.icon a{
+	text-decoration: none;
+	color: white;
+	margin: 0 10px;
+}
+/*banner*/
+.main{
+	
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background:  url("../images/kyle-petzer-l9LlpJdyx9M-unsplash.jpg");
+	background-blend-mode: overlay;
+	background-color: rgba(112,108,108,1.00);
+	position: relative;
+	
+}
+.banner h1{font-size: 50px}
+.tbox{
+	width: 455px;color: black;
+	position: absolute;
+	top: 50%;left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.tbox2{
+	position: absolute;
+	top: 90%;left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	font-size: 15px;
+}
+input{
+	border: none;outline: none;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 100%;
+}
+buton{
+	background-color: #4CAF50;
+  	border: none;
+	border-radius: 50px;
+ 	color: white;
+ 	padding: 15px 32px;
+  	text-align: center;
+	text-decoration: none;
+  	display: inline-block;
+ 	font-size: 16px;
+	margin: 4px 2px;
+ 	cursor: pointer;
+	opacity: 0;
+	animation: fadeInUpBig 2s 1s linear forwards;
+}
+/*section1*/
+.section1{
+	height: 100vh;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 50px;
+}
+.khung1{
+	height: 15vh;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}
+/*khung2*/
+.text{
+	text-align: left;
+}
+.khung2{
+	height: 85vh;
+	background-color: #efefef;
+	opacity: 0;
+	animation: fadeInLeft 2s 1s linear forwards;
+}
+.khung2 ul li{
+	margin: 0 0 10px 0;
+}
+.khung2 button{
+	background-color: #4CAF50;
+	color: white;
+	padding: 15px 32px;
+	border-radius: 50px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+/*khung3*/
+.text{
+	text-align: left;
+}
+.khung3{
+	height: 85vh;
+	background-color: #e3e3e3;
+	opacity: 0;
+	animation: fadeInLeft 2s 1.5s linear forwards;
+}
+.khung3 ul li{
+	margin: 0 0 10px 0;
+}
+.khung3 img{
+	height: 132px;
+}
+.khung3 button{
+	background-color: #4CAF50;
+	color: white;
+	padding: 15px 32px;
+	border-radius: 50px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+/*khung4*/
+.text{
+	text-align: left;
+}
+.khung4{
+	height: 85vh;
+	background-color: #d9d9d9;
+	opacity: 0;
+	animation: fadeInLeft 2s 2s linear forwards;
+}
+.khung4 ul li{
+	margin: 0 0 10px 0;
+}
+.khung4 img{
+	height: 132px;
+}
+.khung4 button{
+	background-color: #4CAF50;
+	color: white;
+	padding: 15px 32px;
+	border-radius: 50px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+					/*section2*/
+.section2{
+	height: 100vh;
+}
+/*ben trai*/
+.s2-trai{
+	height: 100vh;
+}
+.s2-trai img{
+	width: 60%;
+	height: auto;
+	opacity: 0;
+	animation: fadeInRight 2s 1s linear forwards;
+}
+.s2-trai p{margin: 50px 0; font-weight: 300;line-height: 1.5}
+.s2-trai h1{margin: 50px 0 0;}
+/*ben phai*/
+.s2-phai{
+	height: 100vh;
+	background: url("../images/ad1.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	position: relative;
+	overflow: hidden;
+	opacity: 0;
+	animation: fadeInRight 2s 1s linear forwards;
+}
+.hinh1 img{
+	width: 40%;
+	height: auto;
+	opacity: 0;
+	animation: fadeInRight 2s 1.5s linear forwards;
+}
+.hinh2 img{
+	width: 40%;
+	height: auto;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+/*
+	opacity: 0;
+	animation: fadeInRight 2s 2s linear forwards;
+*/
+}
+.hinh3{
+	overflow: hidden;
+}
+.hinh3 img{
+	width: 40%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	opacity: 0;
+	animation: fadeInRight 2s 2.5s linear forwards;
+}
+
+				/*section5*/
+.section5{
+	height: 100vh;
+	margin-top: 100px;
+}
+/*tieu de*/
+.s5-head{
+	height: 10vh;display: flex;justify-content: center;
+}
+/*blog*/
+.s5-boxall{}
+/*box 1*/
+.s5-box1{
+	height: 90vh;
+/*	background-color: antiquewhite;*/
+}
+.s5-box1 i{font-size: 12px;}
+.s5-box1 p{font-weight: 300}
+.s5-box1 img{
+	width: 100%;
+	height: auto;
+	margin: 20px 0 0;
+}
+.s5-box1 button{
+	border: none;color: gray;
+	background: none;
+	cursor: pointer;
+}
+/*box 2*/
+.s5-box2{
+	height: 90vh;
+/*	background-color: antiquewhite;*/
+}
+.s5-box2 i{font-size: 12px;}
+.s5-box2 p{font-weight: 300}
+.s5-box2 img{
+	width: 100%;
+	height: auto;
+	margin: 20px 0 0;
+}
+.s5-box2 button{
+	border: none;color: gray;
+	background: none;
+	cursor: pointer;
+}
+
+/*box 3*/
+.s5-box3{
+	height: 90vh;
+/*	background-color: antiquewhite;*/
+}
+.s5-box3 i{font-size: 12px;}
+.s5-box3 p{font-weight: 300}
+.s5-box3 img{
+	width: 100%;
+	height: auto;
+	margin: 20px 0 0;
+}
+.s5-box3 button{
+	border: none;color: gray;
+	background: none;
+	cursor: pointer;
+}
+/*				secion3*/
+.section3{height: 100vh;position: relative;}
+/*		video*/
+.vd{
+	height: 100vh;
+	margin-top: 50px;
+/*	background-color: cyan;*/
+/*	position: absolute;*/
+}
+.vd video {object-fit: cover;width: 100%;height: 100vh;}
+/*		ve chung toi*/
+.about{
+/*background-color: aliceblue;*/
+	position: absolute;text-align: center;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	animation: op1 2s 8s linear forwards;
+}
+.about h1{text-align: center;font-size: 50px;text-transform: uppercase;color: white;}
+.about p{font-weight: 300;color: whitesmoke;text-align: left;margin-bottom: 30px;}
+.about button{border-radius: 50px;border: none;background-color: #4CAF50;padding: 13px 20px;text-align: center;}
+			/*footer*/
+.footer{
+	height: 250px;
+	background-color: #313132;
+}
+/*f-trai*/
+.f-logo{height: 50%;
+text-align: center;}
+.f-logo img{width: 50%;height: auto;}
+.f-icon{height: 50%;display: flex; justify-content: center;}
+.f-icon a{text-decoration: none;color: #777777;
+font-size: 20px;margin: 0 10px;}
+/*f-giua*/
+.f-giua{
+	height: 250px;
+/*	background-color: blueviolet;*/
+}
+.f-giua input{border-radius: 50px;width: 80%; padding: 12px;}
+.f-giua button{border: none;border-radius: 50px; width: 30%; padding: 12px;margin-left: -10%;cursor: pointer;background-color: #4CAF50;text-transform: uppercase;letter-spacing: 3px;}
+.f-giua h1{margin-bottom: 25px;color: white;}
+.f-giua p{margin-bottom: 25px;color: #777777;}
+/*f-phai*/
+.f-phai{
+	height: 250px;
+/*	background-color: gray;*/
+}
+.f-phai p{color: #777777;}
+.f-phai a{
+	float: left;
+	text-decoration: none;
+	color: white;font-size: 20px;}
+.f-phai h1{margin-bottom: 25px;color: white;}
